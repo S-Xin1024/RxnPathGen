@@ -1,0 +1,7 @@
+catalyst,facet,source,target,barrier,potential,potential_scale,ph,temperature,barrier_type
+Cu,111,CO+CO,COCO,0.50,0,RHE,0,298.15,free_energy
+Cu,111,COCO,COCHO,0.20,0,RHE,0,298.15,free_energy
+Cu,111,COCO,COCOH,0.30,0,RHE,0,298.15,free_energy
+Cu,111,COCHO,CHOCHO,0.25,0,RHE,0,298.15,free_energy
+Cu,111,COCOH,CHOCHO,0.20,0,RHE,0,298.15,free_energy
+Cu,111,CHOCHO,CHOCHO_d,0.15,0,RHE,0,298.15,free_energy

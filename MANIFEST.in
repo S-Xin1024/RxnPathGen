@@ -1,0 +1,10 @@
+include README.md
+include NOTICE.md
+include pyproject.toml
+recursive-include docs *.md *.json
+recursive-include examples *.json *.csv *.py
+recursive-include tests *.py
+recursive-include tools *.py
+recursive-include src/co2rr_network/resources *.json
+recursive-include src/co2rr_network/_vendor *.py *.md *.json *.yml *.yaml *.pt LICENSE
+global-exclude *.py[cod]

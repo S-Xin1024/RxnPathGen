@@ -1,0 +1,8 @@
+catalyst,facet,species,free_energy,structure_id,converged
+Cu,111,CO,-0.10,co_1,true
+Cu,111,CO,-0.05,co_2,true
+Cu,111,COCO,0.20,coco_1,true
+Cu,111,COCHO,0.00,cocho_1,true
+Cu,111,COCOH,0.10,cocoh_1,true
+Cu,111,CHOCHO,-0.20,chocho_1,true
+Cu,111,CHOCHO_d,-0.30,glyoxal_gas,true

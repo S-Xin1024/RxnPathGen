@@ -1,0 +1,47 @@
+{
+  "energies": {
+    "CO+CO -> COCO": {
+      "delta_g": 0.4,
+      "barrier": 0.5
+    },
+    "COCO -> COCHO": {
+      "delta_g": -0.2,
+      "barrier": 0.2
+    },
+    "COCO -> COCOH": {
+      "delta_g": -0.1,
+      "barrier": 0.3
+    },
+    "COCHO -> CHOCHO": {
+      "delta_g": -0.2,
+      "barrier": 0.25
+    },
+    "COCOH -> CHOCHO": {
+      "delta_g": -0.3,
+      "barrier": 0.2
+    },
+    "CHOCHO -> CHOCHO_d": {
+      "delta_g": -0.1,
+      "barrier": 0.15
+    }
+  },
+  "output": "../../output/minimal",
+  "network": {
+    "catalyst": "Cu",
+    "facet": "111",
+    "potential": 0.0,
+    "potential_scale": "RHE",
+    "ph": 0,
+    "temperature": 298.15
+  },
+  "analysis": {
+    "source": "CO+CO",
+    "targets": [
+      "CHOCHO_d"
+    ],
+    "mode": "thermodynamic",
+    "objective": "minimax",
+    "path_counts": true
+  },
+  "plots": false
+}

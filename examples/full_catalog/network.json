@@ -1,0 +1,11 @@
+{
+  "energies": "synthetic_energies.csv",
+  "output": "../../output/full_catalog",
+  "network": {"catalyst": "DEMO", "facet": "111", "profile": "direct", "missing_energy": "error"},
+  "analysis": {
+    "source": "COO+COO", "targets": ["CH2CH2_d", "CH3CH2OH_d", "CHOCHO_d"],
+    "mode": "thermodynamic", "objective": "minimax", "path_counts": true,
+    "max_depth": 30, "max_paths": 10000
+  },
+  "plots": false
+}

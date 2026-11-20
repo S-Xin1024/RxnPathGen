@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "description": "Synthetic teaching network; no experimental or DFT claims",
+  "reactions": [
+    {"source": ["CO", "CO"], "target": ["COCO"], "kind": "cc_coupling"},
+    {"source": ["COCO"], "target": ["COCHO"], "kind": "carbon_hydrogenation"},
+    {"source": ["COCO"], "target": ["COCOH"], "kind": "oxygen_hydrogenation"},
+    {"source": ["COCHO"], "target": ["CHOCHO"], "kind": "carbon_hydrogenation"},
+    {"source": ["COCOH"], "target": ["CHOCHO"], "kind": "carbon_hydrogenation"},
+    {"source": ["CHOCHO"], "target": ["CHOCHO_d"], "kind": "desorption"}
+  ]
+}

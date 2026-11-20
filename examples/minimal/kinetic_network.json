@@ -1,0 +1,55 @@
+{
+  "energies": {
+    "CO+CO -> COCO": {
+      "delta_g": 0.4,
+      "barrier": 0.5
+    },
+    "COCO -> COCHO": {
+      "delta_g": -0.2,
+      "barrier": 0.2
+    },
+    "COCO -> COCOH": {
+      "delta_g": -0.1,
+      "barrier": 0.3
+    },
+    "COCHO -> CHOCHO": {
+      "delta_g": -0.2,
+      "barrier": 0.25
+    },
+    "COCOH -> CHOCHO": {
+      "delta_g": -0.3,
+      "barrier": 0.2
+    },
+    "CHOCHO -> CHOCHO_d": {
+      "delta_g": -0.1,
+      "barrier": 0.15
+    }
+  },
+  "output": "../../output/minimal_kinetic",
+  "network": {
+    "catalyst": "Cu",
+    "facet": "111",
+    "potential": 0.0,
+    "include_reverse": true
+  },
+  "analysis": {
+    "source": "CO+CO",
+    "targets": [
+      "CHOCHO_d"
+    ],
+    "mode": "kinetic",
+    "max_paths": 1000,
+    "kinetics": {
+      "products": [
+        "CHOCHO_d"
+      ],
+      "times": [
+        0,
+        0.0001,
+        0.001,
+        0.01
+      ]
+    }
+  },
+  "plots": false
+}
